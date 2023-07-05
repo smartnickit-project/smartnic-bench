@@ -1,0 +1,8 @@
+[submodule "deps/krcore"]
+	path = deps/krcore
+	url = https://github.com/SJTU-IPADS/krcore-artifacts.git
+	branch = develop
+[submodule "deps/rust-doca"]
+	path = deps/rust-doca
+	url = https://github.com/smartnickit-project/rust-doca.git
+	branch = main

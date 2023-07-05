@@ -1,0 +1,20 @@
+[package]
+name = "two_sided_rdma"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+KRdmaKit = { path = "../../deps/krcore/KRdmaKit", features = ["user"] }
+bench_util = { path = "../bench_util" }
+clap = { version = "4.1.1", features = ["derive"] }
+netbencher_core = { path = "../../netbencher_core" }
+rand = "0.8.5"
+rand_chacha = "*"
+log = { version = "*"}
+simplelog = "^0.12.0"
+tokio = { version = "1.20.1", features = ["full"]}
+ctrlc = "3.2.3"
+
+[features]
+OFED_5_4 = ["KRdmaKit/OFED_5_4", "bench_util/OFED_5_4"]
+ARM = ["bench_util/ARM"]

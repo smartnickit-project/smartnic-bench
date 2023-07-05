@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    'bench_util',
+    'one_sided_rdma',
+    'two_sided_rdma',
+    'doca_dma',
+]
